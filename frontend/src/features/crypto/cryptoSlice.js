@@ -1,12 +1,8 @@
-// src/features/crypto/cryptoSlice.js
 import { createSlice } from "@reduxjs/toolkit";
-import { sampleCryptoData } from "../../utils/mockData";
 
 const cryptoSlice = createSlice({
   name: "crypto",
-  initialState: {
-    assets: sampleCryptoData,
-  },
+  initialState: {},
   reducers: {
     updatePrices: (state) => {
       state.assets = state.assets.map((asset) => {
